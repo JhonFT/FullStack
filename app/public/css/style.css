@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Overlock', cursive;
+}
+h1 {
+  font-family: 'Sansita', sans-serif;
+  font-size: 30px;
+}
+h2 {
+  font-family: 'Sansita', sans-serif;
+  font-size: 30px;
+}
+img {
+  max-width: 100%;
+}
+.Header {
+  background-color: #ef5033;
+}
+.Header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.Header-container-logo {
+  padding: 20px;
+}
+.Header-container-logo img {
+  width: 200px;
+}
+nav {
+  width: 300px;
+  background: #353535;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  z-index: 10;
+  box-shadow: -2px 2px 2px 1px #000;
+}
+nav .Logo {
+  height: 157px;
+  box-sizing: border-box;
+  background-color: #000;
+}
+nav .Logo img {
+  margin-top: 20px;
+}
+nav .Menu-close {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+}
+nav .Menu-close span {
+  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  list-style: none;
+}
+nav ul li {
+  padding: 10px 30px;
+  border-top: 1px solid #000;
+}
+nav ul li:last-child {
+  border-bottom: 1px solid #000;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+}
+main {
+  background-color: #f9f9f9;
+}
+main .Card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow 0.25s;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px;
+  margin: 20px;
+}
+main .Card-text {
+  padding: 24px;
+  border-radius: 0 0 2px 2px;
+}
+main .Card-text p {
+  text-align: justify;
+}
+main .Content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+main .Content-team {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+}
+main .Content-team p {
+  padding: 10px;
+}
+main .Content-team ul {
+  padding-left: 40px;
+  list-style: decimal;
+}
+main .Content-team ol {
+  padding-left: 40px;
+  list-style: lower-alpha;
+}
+main .Content-team ol li {
+  font-weight: 900;
+}
+main .Content-team .List-Card {
+  display: -webkit-flex;
+  display: flex;
+}
+main .Content-team .List-Card .Card {
+  flex: 1 0 0;
+}
+main .Content-team .List-Card .Card.large-8 {
+  max-width: 50%;
+  margin: 0 auto;
+}
+main .Content-team-img {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+.large-6 {
+  width: 50%;
+}

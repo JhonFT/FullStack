@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Git</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Original+Surfer|Sansita|Overlock" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header class="Header">
+		<section class="Header-container">
+			<div class="Header-container-logo">
+				<img src="./img/git.jpg" alt="">
+			</div>
+			
+		</section>
+	</header>
+	<nav>
+		<div class="Logo">
+			<img src="./img/devux.png" alt="">
+		</div>
+		<ul>
+			<li><a href="">GIT</a></li>
+			<li><a href="">FRONTEND</a></li>
+			<li><a href="">BACKEND</a></li>
+			<li><a href="">BASE DE DATOS</a></li>
+		</ul>
+		<div class="Menu-close">
+			<span>></span>
+		</div>
+	</nav>
+	<main>
+		<section class="Content">
+			<div class="Content-team">
+				<h2>Sistema de Control de Versiones</h2>
+					<div class="List-Card">
+					<div class="Card">
+						<figure class="Card-img">
+							<img src="./img/registros.png" alt="">
+						</figure>
+						<div class="Card-text">
+							<b>
+								1) Registran y guardan cada modificación del proyecto en un registro. Todo lo que modificas, lo vigilan.
+							</b>
+						</div>
+					</div>
+					<div class="Card">
+						<div class="Card-text">
+							<b>
+								2) Te dan acceso a este registro. Con esto, puedes gestionarlo, compartirlo, colaborarlo, administrarlo, editarlo, etc.
+							</b>
+						</div>
+						<figure class="Card-img">
+							<img src="./img/versiones.png" alt="">
+						</figure>
+					</div>
+					<div class="Card">
+						<figure class="Card-img">
+							<img src="./img/moverte.png" alt="">
+						</figure>
+						<div class="Card-text">
+							<b>
+								3) Podrás moverte hacia atrás o hacia adelante en diferentes momentos del proyecto.
+							</b>
+						</div>
+					</div>
+				</div>
+				<p>
+					Se utiliza también como herramienta para la colaboración entre diferentes profesionales web. Existen varios, como:
+				</p>
+				<ol>
+					<li>Subversion</li>
+					<li>Mercurial</li>
+					<li>Git</li>
+				</ol>
+				<figure class="Content-team-img">
+					<img src="./img/commits.png" alt="">
+				</figure>
+			</div>
+			<div class="Content-team">
+				<h2>Arquitectura de árbol</h2>
+				<p>	
+					El concepto más importante de Git es la arquitectura de árbol. <br>
+					Es la iteración básica para poder registrar cambios e ir construyendo un repositorio. <br>
+					Está formado por 3 áreas y 2 acciones. 
+				</p>
+				<figure>
+					<img src="./img/Gitprocess.png" alt="">
+				</figure>
+				<div class="List-Card">
+					<div class="Card large-6">
+						<figure class="Card-img">
+							<img src="./img/workingarea.jpg" alt="">
+						</figure>
+						<div class="Card-text">
+							<h3>Working Tree ó Working Directory</h3>
+							<p>
+							Un área en el cual contiene los cambios en “local” pero que no se ha realizado ningún tipo de “guardado” en el área de staging “preparación” ni en el repositorio. <br>
+							Git tiene identificado los cambios que haces, pero no hace nada con ellos, hasta que tú se lo indiques. 
+							<br><br><b>Donde editas y trabajas tus proyectos.</b>
+							</p>
+						</div>
+					</div>
+					<div class="Card large-6">
+						<figure class="Card-img">
+							<img src="./img/stagingarea.jpg" alt="">
+						</figure>
+						<div class="Card-text">
+							<h3>Staging Area</h3>
+							<p>
+								Es el área de preparación, antes de que el conjunto de cambios suban al repositorio y se vuelva “commit"
+								Regularmente, en comparación con otros sistemas de control de versiones, el área existe para poder agrupar correctamente los cambios.
+								Imagina que quieres realizar un commit, e hiciste varios cambios en el proyecto, pero sólo quieres hacer un commit de ciertos archivos. Es aquí donde el staging area tiene sentido.
+								Elige los que quieras que suban al repositorio y prepáralos en esta área.
+								<br><br><b>Escoge cuales archivos iran en el siguiente commit.</b>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="List-Card">
+					<div class="Card large-8">
+						<figure class="Card-img">
+							<img src="./img/repositorio.jpg" alt="">
+						</figure>
+						<div class="Card-text">
+							<h3>Repository</h3>
+							<p>
+								Una colección de commits, “tags” para identificarlos y, ramas. Es el último paso de la arquitectura de 	árbol, de GIT.
+								<br><br><b>El resgistro de todo tu proyecto</b>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Content-team">
+				<h2>Branch</h2>
+				<p>Una rama es una línea del tiempo independiente al desarrollo principal.
+				 	<br>Generan una abstracción para cada proceso de  edición/stage/commit.
+				 	<br>Piénsalo como una forma de generar una nueva área de working directory, staging area e historia del proyecto.
+				 	<br>Los nuevos “commits” son grabados en la historia de la rama actual, que resultan en un “fork” en la historia del proyecto.
+				 	<br><br> <b>Funciona para crear features, arreglar bugs, experimentar, sin afectar la versión estable, la línea principal, del proyecto.</b></p>
+				<figure>
+					<img src="./img/fusion.png" alt="">
+				</figure>
+			</div>
+			<div class="Content-team">
+				<h2>Master</h2>
+				<p>
+					La rama principal de desarrollo. Cada vez que vayas a crear un repositorio de GIT, una rama llamada “master” es creada, y se vuelve la rama activa por defecto.
+				</p>
+				<figure>
+					<img src="./img/master.png" alt="">
+				</figure>
+			</div>
+			<div class="Content-team">
+				<h2>HEAD</h2>
+				<p>Es la referencia principal de GIT para identificar en qué commit se encuentra. Puedes pensarlo como si fuera una flecha apuntando, para situarte dentro del repositorio. Internamente, git checkout se puede utilizar para actualizar el HEAD hacia un punto espefícifico (branch ó commit) <br>
+				Por ejemplo, si ejecutamos: git checkout experimental… HEAD se mueve hacia el último commit de experimental
+				<br><br><b>El concepto HEAD ¿En qué punto de la historia de nuestro proyecto nos encontramos?</b></p>
+				<figure>
+					<img src="./img/headGit.png" alt="">
+				</figure>
+			</div>
+			<div class="Content-team">
+				<h2>Fusiones</h2>
+				<p>
+					La fusión tiene la mezcla de los cambios de ambas ramas.
+					Solución de conflictos <br>
+					<b>a) Fast-Forward</b> <br>
+					<b>b) Manual Merge</b>
+				</p>
+				<figure>
+					<img src="./img/master.png" alt="">
+				</figure>
+				<div class="List-Card">
+					<div class="Card">
+						<div class="Card-text">
+							<h3>Fast-Forward</h3>
+							<p>
+								Los gestores trabajaron archivos diferentes al repositorio
+							</p>
+						</div>
+					</div>
+					<div class="Card">
+						<div class="Card-text">
+							<h3>Manual Merge</h3>
+							<p>
+								¿Qué pasa cuando 2 desarrolladores trabajan el mismo archivo en la fusión?
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Content-team">
+				<h2>Fork- Clone</h2>
+				<p>Fork es una acción que se utiliza en “GitHub” para hacer una copia exacta de un repositorio ajeno, al nuestro.</p>
+			</div>
+			<div class="Content-team">
+				<h2>Workflow</h2>
+				<p>
+					Flujos de trabajo colaborativos. <br> 
+					¿Cómo logro que varios profesionales web trabajen sobre un mismo proyecto, sin morir en el intento?
+				</p>
+				<figure>
+					<img src="./img/workflow.png" alt="">
+				</figure>	
+			</div>
+			<div class="Content-team">
+				<h2>Gitflow Workflow</h2>
+				<p> Es un estricto modelo de diseño de ramas, para el desarrollo de un proyecto. <br>
+					Es considerado un flujo de trabajo avanzado, basado en buenas prácticas. <br>
+					Se dividen las áreas de ramas en 3 tipos:</p>
+				<ol>
+					<li>Bugs</li>
+					<li>Features.</li>
+					<li>Releases.</li>
+				</ol>
+				<p>
+					Su estructura estricta de ramas permite trabajar proyectos masivamente grandes. <br>
+					Puede funcionar bajo un líder de proyecto, ó con alta comunicación en el equipo. <br>
+					El proceso es el siguiente.
+				</p>
+				<figure>
+					<img src="./img/ramas.png" alt="">
+				</figure>
+				<h3>a) Bugs. Ramas de mantenimiento.</h3>
+				<p>
+					Cuando un bug es encontrado por un usuario, se crea un Issue en el repositorio de GitHub y se crea una rama. 
+					La rama puede llamarse con el nombre del issue creado. 
+					Por ejemplo: "issue001". <br>
+					Es la única rama que puede subir directamente a la rama master.
+				</p>
+				<h3>b) Features. Rama de Development.</h3>
+				<p>
+					Para esta sección, se dividen en 2 tipos, la rama principal llamada “development”, el cual va a recibir todas las conclusiones de las siguientes ramas derivadas, las cuales son el segundo tipo, llamadas “features”. <br>
+					Las ramas “features” se derivan de la rama de “development” y las puedes nombrar de acuerdo al desarrollo que vas a realizar. <br>
+					Una vez que estén listas, se fusionan directamente con la rama “development”, el cual va acumulando todos los features confirmados.
+				</p>
+				<h3>c) Releases. Rama de lanzamiento</h3>
+				<p>
+					Conforme vayas teniendo “features” confirmados en la rama de “development”, podrás crear una rama nueva llamada “releases”. <br>
+					Esta rama funciona para prepara los lanzamientos. Se pueden revisar ante “testing” y por auditoría de otros miembros del equipo. <br>
+					En caso de que haya modificaciones por parte de este equipo, se trabaja sobre la misma rama de "releases".
+					<br>
+					Una vez que tengan listo las modificaciones, ellos pueden subir a “master”. Regularmente ellos son los líderes del proyecto. <br>
+					Como dato importante, no sólo hacen un lanzamiento hacia la rama “master”, si no también hacia la rama de “development”, esto con la intención de que los features restantes no tengan problemas con la actualización que hizo el equipo de “releases”. <br>
+					Finalmente, en el área d, sólo denotamos que cuando se genera un release, se van generando “tags” con el número del release realizado, v1.0.  <br>
+					La denominación de cada tag depende del tipo de organización que tenga el equipo. <br>
+				</p>
+			</div>
+			<div class="Content-team">
+				<h2>Ambientes (Local, Producción, Testing)</h2>
+				<p>
+					Los ambientes, que usualmente se utilizan para identificar “Deployment” ó arquitectura de despliegues, son entornos, donde se ejecuta software, con diferentes objetivos y reglas. <br>
+					Dependiendo del tipo y tamaño del proyecto se pueden crear muchos ambientes, pero generalmente están enfocados en 3 tipos
+				</p>
+				<h3>1. Development (Desarrollo)</h3>
+				<p>
+     				Servidor de desarrollo en local. Regularmente es tu máquina, corriendo el proyecto, en el cual puedes ejecutarlo y desplegarlo en tu navegador.
+				</p>
+				<h3>2. - Production (Producción)</h3>
+				<p>
+				     Se refiere al servidor donde corre el proyecto "en línea”, donde los usuarios pueden interactuar con él.
+				</p>
+       			<h3>3. Testing</h3>
+				<p>
+					Son exámenes que se ejecutan sobre un proyecto con la finalidad de encontrar fallos en el código.
+					Puede suceder en un “Central Repository” como GitHub ó integrado con el servidor de producción, antes de entrar plenamente a esta última área.
+				</p>
+			</div>
+			
+			<div class="Content-team">
+				<h2>Deployment</h2>
+				<p>Son todas las actividades que hacen que un proyecto de software esté disponible para su uso, por parte de muchos usuarios. <br>
+				Usualmente, también se le conoce a la ejecución del proyecto, del área de “Development” al área de “Production”, el cual se considera que el mismo ya está disponible “online” y cualquier persona puede acceder a él.</p>
+				<figure>
+					<img src="./img/deploymen.png" alt="">
+				</figure>
+			</div>
+			<div class="Content-team">
+				<h2>GUI’s (Graphical User Interfaces)</h2>
+				<p> Referencia: <a href="https://git-scm.com/downloads/guis">https://git-scm.com/downloads/guis</a> <br>
+				Los Graphical User Interfaces son clientes, programas, que puedes instalar en tu sistema operativo y sintetizan la manera en cómo puedes interactuar con GIT, de manera gráfica. <br> 
+
+				Tienen la ventaja de que son más cómodos para trabajar con GIT y ver cómo el proyecto está evolucionando, autores, commits, ramas, tiempos de desarrollo. <br>
+
+				Sólo hay un inconveniente, el cual es que debes dominar GIT en terminal primero, antes de usarlos, como una recomendación dura.Esto debido a que habrá momentos donde el GUI elegido no sepa resolver ciertos problemas, como fusiones, y él mismo te obligue a resolverlo vía terminal. <br>
+
+				Por ello, aprende GIT y luego ten la libertad de descargar el que más te guste.</p>
+				<figure>
+					<img src="./img/gui's.png" alt="">
+				</figure>
+			</div>
+			
+			<div class="Content-team">
+				<h2>Hook</h2>
+				<p>Es un script que corre automáticamente cada vez que sucede un evento particular en un repositorio.
+				Los “Hooks” te permiten personalizar el comportamiento interno de GIT y ejecutar acciones codificadas por ti en ciertos puntos del ciclo de vida del desarrollo. <br>
+				Para entrar a ellos, los puedes localizar dentro de tu carpeta de trabajo, entrando en: <br>
+				cd .git/hooks <br>
+				Existen cerca de 17 hooks:</p>
+				<p>
+					Puedes conocer cada una de las acciones en: <br>
+					<a href="https://github.com/git/git/blob/master/Documentation/githooks.txt">https://github.com/git/git/blob/master/Documentation/githooks.txt</a>
+				</p>
+			</div>
+			<div class="Content-team">
+				<h2>Pull Request</h2>
+				<p>
+					Es un “feature” que permite a los desarrolladores colaborar fácilmente en comunidades como GitHub ó Bitbucket.
+					El ciclo completo de colaboración para un Pull Request funciona de esta manera:
+				</p>
+				<ul>
+					<li>Realizar un fork de un repositorio ajeno, a tu cuenta de GitHub.</li>
+					<li>Conectar tu área local al repositorio original (principal) bajo el nombre remoto “upstream” (puede ser cualquier nombre, pero es por buenas prácticas) y al repositorio “forked”bajo el nombre “origin”.</li>
+					<li>Realiza “fetch” constantes hacia tus ramas “espejo”. Éstas son ramas que se encuentran escondidas y separadas de tu área de trabajo con el objetivo de ser el “reflejo” de los repositorios remotos, descargados a tu área local. En la mayor medida posible, no los alteres. Los puedes identificar bajo el nombre: “[nombre del remoto]/[nombre de la rama]”. Por ejemplo, "origin/master ó "upstream/master"</li>
+					<li>Haz un push al repositorio “forked”, el repositorio copia en tu cuenta de GitHub, a partir de los cambios que hagas.</li>
+					<li>Cuando estos cambios estén en el repositorio “forked”, puedes encontrar un botón en tu perfil de GitHub llamado “Pull Request”.</li>
+				</ul>
+				<figure>
+					<img src="./img/pull request.png" alt="">
+				</figure>
+			</div>
+			<div class="Content-team">
+				<h2>Comandos</h2> <br><br>
+				<div>
+					<h3>Git Add</h3>
+					<p>
+					Mueve todos los cambios del “Working Directory” al “Staging Area”.
+					Esto da la oportunidad de preparar los archivos antes de realizar la confirmación con el “commit” a la historia principal del proyecto.
+					El comando es: <br>
+					<b>git add [nombre del archivo]    -> </b> Agrega el cambio ó creación del archivo de manera individual. <br>
+					<b>git add .    -></b> Agrega los cambios de todos los archivos, pero no los nuevos creados ó nuevos eliminados. <br>
+					<b>git add -A   -></b> Agrega los cambios los archivos, incluidos nuevos creados ó nuevos eliminados.
+					</p>
+					<figure>
+						<img src="./img/Gitprocess.png" alt="">
+					</figure>
+				</div>
+				<div>
+					<h3>Git Alias (junto a config)</h3>
+					<p>
+						Git alias es un comando que te permite crear tus propios comandos de GIT, a partir de otros, con sus parámetros.
+						Está vinculado con el comando “config” y la fórmula es: <br>	
+						<b>git config --global alias.[nombre del alias que quieres crear] ‘[comandos con parámetros que quieres que se ejecuten con el alias]</b><br>
+						Un ejemplo, para la síntesis de un “git log” con ciertos parámetros que necesitas y no lo quieres escribir a cada momento, es: <br>
+						<b>git config --global alias.nicelog 'log --oneline --graph --all'</b>
+					</p>
+				</div>
+				<div>
+					<h3>Git Branch</h3>
+					<p>
+						Este comando es tu administrador general de ramas.
+						Te permite crear diferentes ramas de desarrollo, dentro de un repositorio particular.
+						El comando a utilizar es: <br>
+						<b>1. git branch [nombre de la rama a crear] </b> <br>
+						<b>2. git checkout [nombre de la rama a crear].</b> <br>
+						Recuerda que una vez creada, debes cambiarte hacia ella.
+						Si quieres crear la rama y cambiarte automáticamente, puedes usar: <br>
+						<b>git checkout -b [nombre de la rama a crear]</b>
+					</p>
+					<figure>
+						<img src="./img/branch.png" alt="">
+					</figure>
+				</div>
+				<div>
+					<h3>Git Checkout</h3>
+					<p>
+						En adición a poder moverte entre commits y viejos archivos para revisión, git checkout también te permite navegar entre las diferentes ramas existentes.
+						Combinado con los otros comandos básicos de GIT, es una forma de trabajar una particular línea de desarrollo. <br>
+						<b>git checkout [rama], git checkout [Commit ID]</b>
+					</p>
+				</div>
+				<div>
+					<h3>Git Clone</h3>
+					<p>
+						Crea una copia de un repositorio existente de GIT.
+						Clonar es el camino más común para que los desarrolladores obtengan una copia del proyecto, del repositorio central. Regularmente va hacia local <br>
+						<b>git clone [dirección del repositorio, puede ser https;//…git, ó, ssh:...]</b>
+					</p>
+				</div>
+				<div>
+					<h3>Git Commit</h3>
+					<p>
+						Inserta el conjunto de archivos que se encuentra en el "Staging Area” y los colocan en el repositorio.
+						Cada “set” de archivos insertados en la historia del proyecto se la llama “commit”.
+						Combinado con git add, ese define el proceso básico de GIT. <br>
+						<b>git commit -m [nombre del título del commit]</b>
+					</p>
+				</div>
+				<div>
+					<h3>Git Commit --amend</h3>
+					<p>
+						Incluir --amend corrige el más reciente commit.
+						Este es muy útil cuando olvidas preparar un archivo en el Staging Area y es importante tenerlo en el  commit. <br> 
+						<b>git commit --amend</b>
+					</p>
+				</div>
+				<div>
+					<h3>Git Config</h3>
+					<p>
+						Configura todas las opciones que puedes hacer con GIT.
+					</p>
+				</div>
+				<div>
+					<h3>Git Fetch</h3>
+					<p>
+						Te permite descargar una rama de otro repositorio, con todos sus commits y archivos.  Pero, no busca integrar nada en tu repositorio local.
+						Esto da la oportunidad de inspeccionar cambios antes de fusionarlos con tu proyecto.
+					</p>
+				</div>
+				<div>
+					<h3>Git Init</h3>
+					<p>
+					Inicia un nuevo repositorio de Git. Esto permite que Git empiece a rastrear al repositorio con todos los cambios que hagas dentro. Es lo primero que tienes que hacer antes de empezar a trabajar. Te sitúas en la carpeta de trabajo que vas a utilizar Git y ejecutas: <br>
+					<b>git init</b>
+					</p>
+				</div>
+				<div>
+					<h3>Git Log</h3>
+					<p>
+						Te ayuda a explorar las previas revisiones de un proyecto. Provee diferentes opciones de formato para mostrar commits. <br>
+						<b>git log [parámetros]</b>
+					</p>
+				</div>
+				<div>
+					<h3>Git Merge</h3>
+					<p>
+						Fusión. Integra cambios de diferentes ramas independientes, en una sola. <br>
+						<b>git checkout [la rama base que quieres que sea “el que absorbe"]git merge [la otra rama que quieres "que sea absorbida"] </b>
+					</p>
+				</div>
+				<div>
+					<h3>Git Pull</h3>
+					<p>
+						Es la versión automática de git fetch. Descarga la rama desde un repositorio remoto y luego, inmediatamente lo fusiona con la rama actual. <br>
+						<b>git fetch + git merge = git pull</b>
+					</p>
+				</div>
+				<div>
+					<h3>Git Push</h3>
+					<p>
+						“Pushing” es el opuesto a “fetching”. Te permite mover una rama local a otro repositorio, que usualmente es la forma de publicar contribuciones, en un servidor remoto. Se pueden enviar muchos commits al mismo tiempo, no sólo uno. <br>
+						<b>git push [nombre del remoto] [nombre de la rama]</b>
+					</p>
+				</div>
+				<div>
+					<h3>Git Rebase</h3>
+					<p> 
+						Te permite mover tus ramas hacia adelante, en lugar de fusionarlas. Esto ayuda a que no hagas fusiones innecesarias. Cuando necesitas una rama más completa y detallada, entonces se utiliza rebase para lograrlo.
+						Por ejemplo, en este caso, la rama “feature”, en lugar de fusionar, colocaremos toda la rama completa enfrente de master.
+						<br> Con esto, en lugar de haber hecho una fusión en un solo commit, en caso de que se necesite un mayor análisis de la rama, dejamos todo lo que se hizo en la rama feature y la colocamos adelante de nuestra rama master (principal).
+					</p>
+					<figure>
+						<img src="./img/rebase.png" alt="">
+					</figure>
+				</div>
+				<div>
+					<h3>Git Remote</h3>
+					<p> 
+						Es un comando que te permite conectar un repositorio locales y remotos.
+						Un administrador de conexiones, en definición sencilla.
+						En lugar de poner constantemente la URL para realizar los comandos de “fetch”, “pull”, y “push”, sólo le asignamos un nombre y podemos llamar esa conexión de manera rápida. <br>
+						<b>git remote add [“nombre del remoto"]* Por defecto, se llama “origin”.</b>
+					</p>
+					<figure>
+						<img src="./img/remote.png" alt="">
+					</figure>
+				</div>
+				<div>
+					<h3>Git Reset</h3>
+					<p> 
+						Deshace cambios a archivos en el “Working Directory”.
+						Hacer un reset te permite limpiar ó completamente eliminar cambios que no han sido publicados al repositorio público.
+					</p>
+				</div>
+				<div>
+					<h3>Git Revert</h3>
+					<p> 
+						Deshace un commit, colocando uno extra adelante de la rama, quitando los cambios del commit elegido. El proceso es: <br>
+						Toma el commit ID que quieres eliminar, Colócalo como: <br> 
+						<b>git revert [commit ID]</b> <br>
+						Git lo identificará pero no lo borrará, si no, más bien, verá qué cambios se ejecutaron en ese commit puntualmente y creará uno nuevo, adelante del último, revirtiendo todas las acciones de ese commit. <br>
+						<br> ¿Por qué no borra el commit que elegimos? <br><br>
+						Porque alteraría la historia del proyecto. Y, aunque haya un comió que esté mal creado, si se borra, alteraría toda la historia. La solución es conocer qué tiene ese commit y revertirlo con un commit nuevo.
+					</p>
+				</div>
+				<div>
+					<h3>Git Status</h3>
+					<p> 
+						Muestra el estado del “Working Directory” y cada commit subido al repositor
+					</p>
+				</div>
+			</div>
+			<div class="Content-team">
+				<h2>Herramientas</h2> <br><br>
+				<div>
+					<h3>Git Extras</h3>
+					<p>
+						Extensión, hecha por la comunidad, de los comandos de Git. Recomendado para automatizar y agilizar procesos. <br>
+						<a href="https://github.com/tj/git-extras">https://github.com/tj/git-extras</a>
+					</p>
+				</div>
+				<div>
+					<h3>Zenhub.io</h3>
+					<p>
+						Es una herramienta que aprovecha el project management de GitHub para expandir funcionalidades.
+						Incluye trabajo con SCRUM, sprints y una mejor organización con respecto a Issues y un concepto llamado “Epics”.
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="./des/app.js"></script>
+</body>
+</html>
